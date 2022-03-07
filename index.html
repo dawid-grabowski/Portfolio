@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dawid Grabowski">
+    <meta name="description" content="I'm 19 years old student from Poland, living in Poznan. For now - it has been 2 years since I started learning Front-End Development. Languages that I'm learning are HTML, CSS (SASS), JavaScript and ReactJS. My goal is to develop myself as much as possible and to regularly expierience new things.">
+    <meta name="keywords" content="Front-End, Programming, Dawid Grabowski, Junior">
+
+    <title>Dawid Grabowski - Portfolio</title>
+
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ca5f5c3b13.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar__mobile">
+            <li class="navbar__mobile--item"><a href="#">home</a></li>
+            <li class="navbar__mobile--item"><a href="#info">info</a></li>
+            <li class="navbar__mobile--item"><a href="#contact">contact</a></li>
+            <li class="navbar__mobile--item item-x">
+                <a href="javascript:"><i class="fa-solid fa-x"></i></a>
+            </li>
+        </div>
+        <div class="navbar-wrapper">
+            <div class="navbar__logo">
+                <a href="#">
+                    <p>dawid_grabowski</p>
+                </a>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__list--item"><a href="#">home</a></li>
+                <li class="navbar__list--item"><a href="#info">info</a></li>
+                <li class="navbar__list--item"><a href="#contact">contact</a></li>
+            </ul>
+            <div class="navbar__burger"></div>
+        </div>
+    </div>
+        <div class="hero" id="hero">
+            <div class="hero__text">
+                <h1 class="hero__text--header title-hero">Hi, i'm Dawid</h1>
+                <p class="hero__text--paragraph description-hero">I'm 19 years old student from Poland, living in Poznan. For now - it has been 2 years since I started learning Front-End Development. Languages that I'm learning are HTML, CSS (SASS), JavaScript and ReactJS. My goal is to develop myself as much as possible and to regularly expierience new things.</p>
+                <a href="#info"><button><span class="button-hero">read more</span> <i class="fa-solid fa-book"></i></button></a>
+            </div>
+            <div class="hero__bro">
+                <img class="hero__bro--img" src="./img/bro.svg" alt="Little cartoon man looking at you scrooling the page.">
+            </div>
+            <div class="hero__switches">
+                <div class="hero__switches--dark-mode">
+                    <button class="dark-switch btn-theme"><i class="fa-solid fa-moon moon"></i><i class="fa-regular fa-lightbulb sun"></i></button>
+                </div>
+                <div class="hero__switches--language">
+                    <button class="change-lang btn-lang">EN</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+        <div class="info" id="info">
+                <div class="info__portals">
+                    <div class="info__portals--header">
+                        <h2 class="title-info-one">Where can you find me?</h2>
+                    </div>
+                    <div class="info__portals--content">
+                        <p><a target="_blank" title="click to visit my LinkedIn" href="https://www.linkedin.com/in/dawid-grabowski-10634a231/"><i class="fa-brands fa-linkedin"></i></a> - <a target="_blank" title="click to visit my LinkedIn" href="https://www.linkedin.com/in/dawid-grabowski-10634a231/">linkedIn</a></p>
+                        <p><a target="_blank" title="click to visit my GitHub" href="https://github.com/dawid-grabowski"><i class="fab fa-github"></i></a> - <a target="_blank" title="click to visit my GitHub" href="https://github.com/dawid-grabowski">gitHub</a></p>
+                    </div>
+                    <div class="border-top"></div>
+                    <div class="border-down"></div>
+                </div>
+                <div class="info__projects">
+                    <div class="info__portals--header">
+                        <h2 class="title-info-two">My projects:</h2>
+                    </div>
+                    <div class="info__portals--paragraph">
+                        <p><span class="description-info-one">Cat's Hotel Webiste</span> - <a target="_blank" title="click to visit hotel's page" href="https://www.hotelmascotas.pl">www.hotelmascotas.pl</a></p>
+                        <p>'Keep the frog alive' <span class="description-info-two">game in progress</span> - <button>play <i class="fa-solid fa-play"></i></button></p>
+                    </div>
+                </div>
+        </div>
+        <div class="contact" id="contact">
+                <h2 class="contact__header title-contact">If you want to contact me, look down below</h2>
+                <p class="contact__paragraph between-top"><a href="tel:885344804">+48 885-344-804</a></p>
+                <a href="tel:885344804"><button class="button-contact-one">call me</button></a>
+                <br>
+                <p class="contact__paragraph"><a href="mailto:kontakt@grabowskidawid.com">kontakt@grabowskidawid.com</a></p>
+                <a href="mailto:kontakt@grabowskidawid.com"><button class="button-contact-two">send mail</button></a>
+                <p class="contact__paragraph between between-form">or complete a form</p>
+
+                <div class="contact__form">
+                    <form action="https://submit-form.com/WdQIlWQz" method="post">
+                        <div class="contact__form--header"><h2 class="title-form">Contact Form</h2></div>
+                        <div class="contact__form--paragraph"><p class="description-form">feel free to send me message if you have any questions - I'll try to respond as soon as possible</p></div>
+                        <input type="text" placeholder="mail" name="mail" id="mail">
+                        <input type="text" placeholder="title" name="title" id="title">
+                        <textarea name="message" placeholder="enter your message here..." id="message" cols="30" rows="10"></textarea>
+                        <button class="contact__form--button button-form">send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>grabowskidawid.com &copy; <span class="footer-year"></span> - all rights reserved.</p>
+        </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
